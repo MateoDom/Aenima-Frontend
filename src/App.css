@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html,
+body,
+#root,
+.content,
+.App {
+  height: 100%;
+  width: 100%;
+}
+
+
+.App {
+  display: flex;
+  position: relative;
+}
