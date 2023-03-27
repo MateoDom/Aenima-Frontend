@@ -17,4 +17,8 @@ export const TextSidebar = styled.p`
     font-weight: 700;
     margin: 0;
     color: #2A3037;
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
 `

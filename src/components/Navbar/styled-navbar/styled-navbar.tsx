@@ -37,7 +37,7 @@ export const TextContainer = styled.div`
 `
 
 interface TextProps {
-  isActive: boolean
+  isSelected: boolean
 }
 
 export const TextNavbar = styled.p<TextProps>`
@@ -46,10 +46,14 @@ export const TextNavbar = styled.p<TextProps>`
   width: 100%;
   font-family: 'Montserrat';
   font-style: normal;
-  color: ${p => p.isActive ? '#000' : '#CBD0D3' };
+  color: ${p => p.isSelected ? '#000' : '#CBD0D3' };
   font-weight: 400;
   &:hover {
     color: #000;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
   }
   transition: all 0.3s;
 `

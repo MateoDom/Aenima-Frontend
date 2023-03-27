@@ -3,6 +3,7 @@ import { Drawer, Box, IconButton } from '@mui/material'
 import { TextContainerSidebar, TextSidebar } from './styled-sidebar';
 import CloseIcon from '../../assets/No.svg';
 import { useSidebarContext } from '../../context';
+import { HashLink as Link } from 'react-router-hash-link'; 
 
 export const Sidebar: React.FC = () => {
     const { isSidebarOpen, toggleIsSidebarOpen } = useSidebarContext();
@@ -32,9 +33,9 @@ export const Sidebar: React.FC = () => {
               <img src={CloseIcon} />
             </IconButton>
             <TextContainerSidebar>
-              <TextSidebar>Home</TextSidebar>
-              <TextSidebar>Tendencias</TextSidebar>
-              <TextSidebar>Blog</TextSidebar>
+              <TextSidebar><Link onClick={toggleIsSidebarOpen} to={'#home'}>Home</Link></TextSidebar>
+              <TextSidebar><Link onClick={toggleIsSidebarOpen} to={'#trending'}>Tendencias</Link></TextSidebar>
+              <TextSidebar><Link onClick={toggleIsSidebarOpen} to={'#blog'}>Blog</Link></TextSidebar>
             </TextContainerSidebar>
         </Drawer>
       </Box>

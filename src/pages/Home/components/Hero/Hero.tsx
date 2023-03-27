@@ -4,7 +4,7 @@ import { HeroImg, HeroTextContainer, TitleHero, HeroInfo, Slider, Divider } from
 
 export const Hero = () => {
     return (
-      <HeroImg>
+      <HeroImg id='home'>
         <HeroTextContainer>
           <TitleHero>
             <img src={Map} />

@@ -8,7 +8,7 @@ import { TrendingCardContainer } from "./styled-trending";
 
 export const Trending = () => {
     return (
-        <TrendLayout>
+        <TrendLayout id="trending">
             <HomeContainer>
             <TextContainer>
                 <TitleHome>Tendencias</TitleHome>
@@ -19,6 +19,7 @@ export const Trending = () => {
                 <CardImage className={'card3'}img={CardThree} title={'Nieve y aventura'} text={'Contiene la información de Nieve y aventura.'}/>
             </TrendingCardContainer>
             </HomeContainer>
+            <div id="blog"></div>
         </TrendLayout>
     )
 }
